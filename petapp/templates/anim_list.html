@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet List</title>
+</head>
+<body>
+    <h1>Saved Pets</h1>
+    
+        <ul>
+            <li>Name</li>
+            <li>species</li>
+            <li>age</li>
+            <tli>ownername</tli>
+        </ul>
+        {% for pet in pets %}
+        <ul>
+            <li>{{ pet.name }}</li>
+            <li>{{ pet.species }}</li>
+            <li>{{ pet.age }}</li>
+            <li>{{ pet.ownername }}</li>
+        </ul>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

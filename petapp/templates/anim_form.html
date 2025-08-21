@@ -1,0 +1,25 @@
+<!-- <h1>Animals</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">submit</button>
+</form> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Pet</title>
+</head>
+<body>
+    <h1>Add Pet Information</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+    <p><a href="{% url 'anim_list' %}">View Pet List</a></p>
+</body>
+</html>
