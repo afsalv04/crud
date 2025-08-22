@@ -15,5 +15,7 @@ from . import views
 
 urlpatterns = [
     path('anim/', views.anim_create, name='anim_add'),   
-    path('list/', views.anim_list, name='anim_list')  
+    path('list/', views.anim_list, name='anim_list'),
+    path('edit/<int:pk>/', views.edit_pet, name='edit_pet'),
+    path('delete/<int:pk>/', views.delete_pet, name='delete_pet'),
 ]

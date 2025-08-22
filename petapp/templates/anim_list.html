@@ -18,9 +18,14 @@
             <li>{{ pet.species }}</li>
             <li>{{ pet.age }}</li>
             <li>{{ pet.ownername }}</li>
+
+            <a href="{% url 'edit_pet' pet.pk %}">edit</a>
+             <a href="{% url 'delete_pet' pet.pk %}">delete</a>
         </ul>
         {% endfor %}
     </table>
+
+   
 
 </body>
 </html>
